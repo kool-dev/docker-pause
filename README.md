@@ -11,7 +11,7 @@ Well my use-case is that i need a pause container on Kubernetes and exec some co
 With `docker run`:
 
 ```sh
-docker run -it --rm kooldev/pause:latest
+docker run --rm kooldev/pause:latest
 ```
 
 ## License
