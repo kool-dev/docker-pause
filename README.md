@@ -4,14 +4,15 @@ Minimal Pause Docker image based on Alpine. Its use is intended for [kool](https
 
 ## Why?
 
-Well my use-case is that i need a pause container on Kubernetes and exec some commands on livenessProbe, something called sidecar container for healthz.
+The original use-case is when we need a pause container on Kubernetes and execute some commands on `livenessProbe`, something called *sidecar container* for **healthz**.
 
 ## Usage
 
-With `docker run`:
+With `kool`:
+
 
 ```sh
-docker run --rm kooldev/pause:latest
+kool docker kooldev/pause:latest
 ```
 
 ## License
