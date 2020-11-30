@@ -1,14 +1,17 @@
-# kool-dev/docker-bash
+# kool-dev/docker-pause
 
-Minimal Bash Docker image. Its use is intended for [kool](https://github.com/kool-dev/kool), but can fit in any other bash use-case.
+Minimal Pause Docker image based on Alpine. Its use is intended for [kool](https://github.com/kool-dev/kool), but can fit in any other use-case.
+
+## Why?
+
+Well my use-case is that i need a pause container on Kubernetes and exec some commands on livenessProbe, something called sidecar container for healthz.
 
 ## Usage
 
 With `docker run`:
 
 ```sh
-docker run -it --rm kooldev/bash:latest --version
-docker run -it --rm kooldev/bash:latest -c "echo kool stuff"
+docker run -it --rm kooldev/pause:latest
 ```
 
 ## License
